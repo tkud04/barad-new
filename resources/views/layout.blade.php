@@ -9,7 +9,7 @@
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
 
 		<title>@yield('title') | Barad Innovations NG</title>
-		<link rel="shortcut icon" href="assets/images/logo.jpg">
+		<link rel="shortcut icon" href="assets/images/fav.jpg">
 
 		<!-- fraimwork - css include -->
 		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">

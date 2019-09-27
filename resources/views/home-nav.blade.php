@@ -10,7 +10,7 @@
 						<div class="col-lg-3">
 							<div class="site-logo-wrapper">
 								<a href="{{url('/')}}" class="logo">
-									<img src="assets/images/logo.jpg" style="height: 50px; width: 141px;" alt="logo_not_found">
+									<img src="assets/images/fav.jpg" style="height: 50px; width: 50px;" alt="logo_not_found">
 								</a>
 							</div>
 						</div>
