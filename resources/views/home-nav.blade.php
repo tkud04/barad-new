@@ -37,8 +37,6 @@
 													</ul>
 												</li>
 												<li>
-													<a href="{{url('events')}}">events</a>												
-												<li>
 													<a href="{{url('blog')}}">blog</a>
 												</li>
 												<li>

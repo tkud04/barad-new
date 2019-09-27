@@ -148,12 +148,6 @@
 								</a>
 							</li>
 							<li>
-								<a href="{{url('events')}}">
-									<span class="icon"><i class="fas fa-home"></i></span>
-									Events
-								</a>
-							</li>
-							<li>
 								<a href="{{url('blog')}}">
 									<span class="icon"><i class="fas fa-home"></i></span>
 									Blog
@@ -568,7 +562,6 @@
 								<!-- site-logo-wrapper - start -->
 								<div class="site-logo-wrapper mb-30">
 									<a href="{{url('/')}}" class="logo">
-										<img src="assets/images/logo.jpg" style="height: 50px; width: 141px;" alt="logo_not_found">
 										<img src="assets/images/logo.jpg" style="height: 50px; width: 141px;" alt="logo_not_found">
 									</a>
 								</div>
