@@ -8,10 +8,14 @@
 							<div class="col-lg-6 col-md-12 col-sm-12">
 
 								<!-- breadcrumb-title - start -->
-								<div class="breadcrumb-title text-center text-white mb-50">
+								<div class="breadcrumb-title text-center mb-50">
+									@if(isset($ajasa))
+									<span class="sub-title">{{$ajasa}}</span>
+								    @endif
 									<h2 class="big-title"><strong>@yield('title')</strong></h2>
 								</div>
 								<!-- breadcrumb-title - end -->
+
 
 								<!-- breadcrumb-list - start -->
 								<div class="breadcrumb-list">

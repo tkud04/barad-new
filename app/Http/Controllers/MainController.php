@@ -35,8 +35,9 @@ class MainController extends Controller {
 		}
 	    $signals = $this->helpers->signals;
 	    $sliders = $this->helpers->homeSliders;
+	    $events = $this->helpers->events;
 		
-    	return view('index',compact(['user','signals','sliders']));
+    	return view('index',compact(['user','signals','sliders','events']));
     }
 
 	/**
@@ -55,6 +56,60 @@ class MainController extends Controller {
 	    $signals = $this->helpers->signals;
 		
     	return view('about',compact(['user','signals']));
+    }
+	
+	/**
+	 * Show the application welcome screen to the user.
+	 *
+	 * @return Response
+	 */
+	public function getServices()
+    {
+       $user = null;
+		$cart = [];
+		if(Auth::check())
+		{
+			$user = Auth::user();
+		}
+	    $signals = $this->helpers->signals;
+		
+    	return view('services',compact(['user','signals']));
+    }
+	
+	/**
+	 * Show the application welcome screen to the user.
+	 *
+	 * @return Response
+	 */
+	public function getFAQ()
+    {
+       $user = null;
+		$cart = [];
+		if(Auth::check())
+		{
+			$user = Auth::user();
+		}
+	    $signals = $this->helpers->signals;
+		
+    	return view('faq',compact(['user','signals']));
+    }
+	
+	/**
+	 * Show the application welcome screen to the user.
+	 *
+	 * @return Response
+	 */
+	public function getEvents()
+    {
+       $user = null;
+		$cart = [];
+		if(Auth::check())
+		{
+			$user = Auth::user();
+		}
+	    $signals = $this->helpers->signals;
+		
+    	return view('events',compact(['user','signals']));
     }
 	
 	/**

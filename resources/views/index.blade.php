@@ -24,26 +24,31 @@
 				<!-- upcomming-event-carousel - start -->
 				<div id="upcomming-event-carousel" class="upcomming-event-carousel owl-carousel owl-theme">
 
+                    <?php
+					 foreach($events as $evt)
+					 {
+						 $xx = explode(' ',$evt['posted-at']);
+				    ?>
 					<!-- item - start -->
 					<div class="item">
 						<div class="event-item">
 
 							<div class="countdown-timer">
-								<ul class="countdown-list" data-countdown="2020/08/08"></ul>
+								<ul class="countdown-list" data-countdown="{{$evt['deadline']}}"></ul>
 							</div>
 
 							<div class="event-image">
-								<img src="assets/images/upcomming-events/event-1.jpg" alt="Image_not_found">
+								<img src="{{$evt['img']}}" alt="Image_not_found">
 								<div class="post-date">
-									<span class="date">26</span>
-									<small class="month">june</small>
+									<span class="date">{{$xx[0]}}</span>
+									<small class="month">{{$xx[1]}}</small>
 								</div>
 							</div>
 
 							<div class="event-content">
 								<div class="event-title mb-30">
 									<h3 class="title">
-										The Governors Music Festival 2019
+										{{$evt['title']}}
 									</h3>
 									<span class="ticket-price yellow-color">Tickets from $52</span>
 								</div>
@@ -71,246 +76,9 @@
 						</div>
 					</div>
 					<!-- item - end -->
-
-					<!-- item - start -->
-					<div class="item">
-						<div class="event-item">
-
-							<div class="countdown-timer">
-								<ul class="countdown-list" data-countdown="2020/08/08"></ul>
-							</div>
-
-							<div class="event-image">
-								<img src="assets/images/upcomming-events/event-2.jpg" alt="Image_not_found">
-								<div class="post-date">
-									<span class="date">28</span>
-									<small class="month">aug</small>
-								</div>
-							</div>
-
-							<div class="event-content">
-								<div class="event-title mb-30">
-									<h3 class="title">
-										The Governors Music Festival 2019
-									</h3>
-									<span class="ticket-price yellow-color">Tickets from $52</span>
-								</div>
-								<div class="event-post-meta ul-li-block mb-30">
-									<ul>
-										<li>
-											<span class="icon">
-												<i class="far fa-clock"></i>
-											</span>
-											Start 20:00pm - 22:00pm
-										</li>
-										<li>
-											<span class="icon">
-												<i class="fas fa-map-marker-alt"></i>
-											</span>
-											Manhattan, New York
-										</li>
-									</ul>
-								</div>
-								<a href="#!" class="custom-btn">
-									tickets & details
-								</a>
-							</div>
-
-						</div>
-					</div>
-					<!-- item - end -->
-
-					<!-- item - start -->
-					<div class="item">
-						<div class="event-item">
-
-							<div class="countdown-timer">
-								<ul class="countdown-list" data-countdown="2020/08/08"></ul>
-							</div>
-
-							<div class="event-image">
-								<img src="assets/images/upcomming-events/event-3.jpg" alt="Image_not_found">
-								<div class="post-date">
-									<span class="date">20</span>
-									<small class="month">may</small>
-								</div>
-							</div>
-
-							<div class="event-content">
-								<div class="event-title mb-30">
-									<h3 class="title">
-										The Governors Music Festival 2019
-									</h3>
-									<span class="ticket-price yellow-color">Tickets from $52</span>
-								</div>
-								<div class="event-post-meta ul-li-block mb-30">
-									<ul>
-										<li>
-											<span class="icon">
-												<i class="far fa-clock"></i>
-											</span>
-											Start 20:00pm - 22:00pm
-										</li>
-										<li>
-											<span class="icon">
-												<i class="fas fa-map-marker-alt"></i>
-											</span>
-											Manhattan, New York
-										</li>
-									</ul>
-								</div>
-								<a href="#!" class="custom-btn">
-									tickets & details
-								</a>
-							</div>
-
-						</div>
-					</div>
-					<!-- item - end -->
-
-					<!-- item - start -->
-					<div class="item">
-						<div class="event-item">
-
-							<div class="countdown-timer">
-								<ul class="countdown-list" data-countdown="2020/08/08"></ul>
-							</div>
-
-							<div class="event-image">
-								<img src="assets/images/upcomming-events/event-1.jpg" alt="Image_not_found">
-								<div class="post-date">
-									<span class="date">26</span>
-									<small class="month">june</small>
-								</div>
-							</div>
-
-							<div class="event-content">
-								<div class="event-title mb-30">
-									<h3 class="title">
-										The Governors Music Festival 2019
-									</h3>
-									<span class="ticket-price yellow-color">Tickets from $52</span>
-								</div>
-								<div class="event-post-meta ul-li-block mb-30">
-									<ul>
-										<li>
-											<span class="icon">
-												<i class="far fa-clock"></i>
-											</span>
-											Start 20:00pm - 22:00pm
-										</li>
-										<li>
-											<span class="icon">
-												<i class="fas fa-map-marker-alt"></i>
-											</span>
-											Manhattan, New York
-										</li>
-									</ul>
-								</div>
-								<a href="#!" class="custom-btn">
-									tickets & details
-								</a>
-							</div>
-
-						</div>
-					</div>
-					<!-- item - end -->
-
-					<!-- item - start -->
-					<div class="item">
-						<div class="event-item">
-
-							<div class="countdown-timer">
-								<ul class="countdown-list" data-countdown="2020/08/08"></ul>
-							</div>
-
-							<div class="event-image">
-								<img src="assets/images/upcomming-events/event-2.jpg" alt="Image_not_found">
-								<div class="post-date">
-									<span class="date">28</span>
-									<small class="month">aug</small>
-								</div>
-							</div>
-
-							<div class="event-content">
-								<div class="event-title mb-30">
-									<h3 class="title">
-										The Governors Music Festival 2019
-									</h3>
-									<span class="ticket-price yellow-color">Tickets from $52</span>
-								</div>
-								<div class="event-post-meta ul-li-block mb-30">
-									<ul>
-										<li>
-											<span class="icon">
-												<i class="far fa-clock"></i>
-											</span>
-											Start 20:00pm - 22:00pm
-										</li>
-										<li>
-											<span class="icon">
-												<i class="fas fa-map-marker-alt"></i>
-											</span>
-											Manhattan, New York
-										</li>
-									</ul>
-								</div>
-								<a href="#!" class="custom-btn">
-									tickets & details
-								</a>
-							</div>
-
-						</div>
-					</div>
-					<!-- item - end -->
-
-					<!-- item - start -->
-					<div class="item">
-						<div class="event-item">
-
-							<div class="countdown-timer">
-								<ul class="countdown-list" data-countdown="2020/08/08"></ul>
-							</div>
-
-							<div class="event-image">
-								<img src="assets/images/upcomming-events/event-3.jpg" alt="Image_not_found">
-								<div class="post-date">
-									<span class="date">20</span>
-									<small class="month">may</small>
-								</div>
-							</div>
-
-							<div class="event-content">
-								<div class="event-title mb-30">
-									<h3 class="title">
-										The Governors Music Festival 2019
-									</h3>
-									<span class="ticket-price yellow-color">Tickets from $52</span>
-								</div>
-								<div class="event-post-meta ul-li-block mb-30">
-									<ul>
-										<li>
-											<span class="icon">
-												<i class="far fa-clock"></i>
-											</span>
-											Start 20:00pm - 22:00pm
-										</li>
-										<li>
-											<span class="icon">
-												<i class="fas fa-map-marker-alt"></i>
-											</span>
-											Manhattan, New York
-										</li>
-									</ul>
-								</div>
-								<a href="#!" class="custom-btn">
-									tickets & details
-								</a>
-							</div>
-
-						</div>
-					</div>
-					<!-- item - end -->
+                    <?php
+					 }
+				    ?>
 
 				</div>
 				<!-- upcomming-event-carousel - end -->
@@ -334,13 +102,14 @@
 					<div class="col-lg-4 col-md-12 col-sm-12">
 						<div class="section-title text-left mb-30">
 							<span class="line-style"></span>
-							<small class="sub-title">we are harmoni</small>
-							<h2 class="big-title"><strong>No.1</strong> Events Management</h2>
+							<small class="sub-title">Barad events</small>
+							<h2 class="big-title"><strong>No.1</strong> Events Management in Nigeria</h2>
 							<p class="black-color mb-50">
-								Lorem ipsum dollor site amet the best  consectuer adipiscing elites sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat insignia the consectuer adipiscing elit. 
+								<b>Barad Innovations</b> is the leading event management company in Nigeria. Established in 2017, our goal has been to create bespoke exceptional events for our varied clientele.
+We believe every event has got a brand/reputation to protect and promote, that is why we pay the utmost attention to detail in all our undertakings. 
 							</p>
-							<a href="#!" class="custom-btn">
-								about harmonei
+							<a href="{{url('about')}}" class="custom-btn">
+								about us
 							</a>
 						</div>
 					</div>
@@ -360,7 +129,7 @@
 											Friendly Team
 										</strong>
 										<small class="sub-title">
-											More than 200 teams
+											More than 70 members
 										</small>
 									</a>
 								</li>
@@ -370,10 +139,10 @@
 											<i class="flaticon-two-balloons"></i>
 										</span>
 										<strong class="title">
-											perfact venues
+											perfect venues
 										</strong>
 										<small class="sub-title">
-											perfact venues
+											in and out of Lagos
 										</small>
 									</a>
 								</li>
@@ -383,10 +152,10 @@
 											<i class="flaticon-cheers"></i>
 										</span>
 										<strong class="title">
-											Unique Scenario
+											Unique Scenarios
 										</strong>
 										<small class="sub-title">
-											We thinking out of the box
+											We think out of the box
 										</small>
 									</a>
 								</li>
@@ -400,7 +169,7 @@
 											Unforgettable Time
 										</strong>
 										<small class="sub-title">
-											We make you perfect event
+											We create an atmosphere your guests will NEVER forget
 										</small>
 									</a>
 								</li>
@@ -410,7 +179,7 @@
 											<i class="flaticon-speech-bubble"></i>
 										</span>
 										<strong class="title">
-											24/7 Hours Support
+											24/7 Support
 										</strong>
 										<small class="sub-title">
 											Anytime anywhere
@@ -426,7 +195,7 @@
 											Briliant Idea
 										</strong>
 										<small class="sub-title">
-											We have million idea
+											We have a million ideas
 										</small>
 									</a>
 								</li>

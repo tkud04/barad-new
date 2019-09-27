@@ -31,6 +31,12 @@ class Helper implements HelperContract
 		     ['text-1' => "medium text",'text-2' => "big text",'text-3' => "small text"],
 		     ['text-1' => "medium text",'text-2' => "big text",'text-3' => "small text"],
 		];
+		
+		public $events = [
+		     ['deadline' => "2019/09/27",'posted-at' => "26 jul",'img' => "assets/images/upcomming-events/event-1.jpg",'title' => "TOLEX 2019",'location' => "Maryland, Lagos"],		     
+		     ['deadline' => "2019/08/08",'posted-at' => "15 may",'img' => "assets/images/upcomming-events/event-2.jpg",'title' => "COBRA 2019",'location' => "Maryland, Lagos"],		     
+		     ['deadline' => "2019/12/08",'posted-at' => "29 jul",'img' => "assets/images/upcomming-events/event-3.jpg",'title' => "TAYO@35 2019",'location' => "Maryland, Lagos"],		     
+		];
                                          
 
           /**
