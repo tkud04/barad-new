@@ -568,7 +568,8 @@
 								<!-- site-logo-wrapper - start -->
 								<div class="site-logo-wrapper mb-30">
 									<a href="{{url('/')}}" class="logo">
-										<img src="assets/images/1.site-logo.png" alt="logo_not_found">
+										<img src="assets/images/logo.jpg" style="height: 50px; width: 141px;" alt="logo_not_found">
+										<img src="assets/images/logo.jpg" style="height: 50px; width: 141px;" alt="logo_not_found">
 									</a>
 								</div>
 								<!-- site-logo-wrapper - end -->
